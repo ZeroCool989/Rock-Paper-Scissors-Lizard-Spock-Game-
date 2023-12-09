@@ -143,3 +143,17 @@ function toggleAudio() {
         document.getElementById('playPauseAudio').textContent = 'Play Rules Narration';
     }
 }
+
+// Function to toggle the mute status of the game
+function toggleMute() {
+    isMuted = !isMuted;
+    const muteButton = document.getElementById('muteButton');
+    muteButton.textContent = isMuted ? 'Unmute Sounds' : 'Mute Sounds';
+
+    // Mute or unmute all audio elements
+    const audios = document.querySelectorAll('audio');
+    audios.forEach(audio => {
+        audio.muted = isMuted;
+    });
+}
+
