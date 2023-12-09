@@ -119,3 +119,16 @@ function startBouncing() {
 function stopBouncing(imageElement) {
     imageElement.style.animation = 'none';
 }
+
+// Function to show the game rules popup
+function showRules() {
+    const rulesPopup = document.getElementById('rulesPopup');
+    rulesPopup.style.display = 'block';
+}
+
+// Function to hide the game rules popup
+function hideRules() {
+    const rulesPopup = document.getElementById('rulesPopup');
+    rulesPopup.style.display = 'none';
+}
+
