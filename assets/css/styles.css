@@ -214,4 +214,9 @@ audio {
     background-color: #45a049;
 }
 
-
+/* Choices Display Styles */
+#choicesDisplay {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
