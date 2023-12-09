@@ -98,3 +98,19 @@ function resetGame() {
     document.getElementById('computerChoiceImage').style.backgroundImage = '';
     resetAudio();
 }
+
+// Function to start the bouncing animation for the choice images
+function startBouncing() {
+    const playerChoiceImage = document.getElementById('playerChoiceImage');
+    const computerChoiceImage = document.getElementById('computerChoiceImage');
+
+    // Apply the bouncing animation
+    playerChoiceImage.style.animation = 'bounceRight 1s ease-in-out infinite';
+    computerChoiceImage.style.animation = 'bounceLeft 1s ease-in-out infinite';
+
+    // Stop the bouncing after 1 second
+    setTimeout(function () {
+        stopBouncing(playerChoiceImage);
+        stopBouncing(computerChoiceImage);
+    }, 1000);
+}
