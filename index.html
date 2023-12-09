@@ -18,6 +18,38 @@
     <!-- Prompt for the player to make a choice -->
     <p id="choicePrompt">Player, make your choice and choose wisely!</p>
 
+       <!-- Buttons for player choices -->
+       <div id="choices">
+        <button type="button" aria-label="Rock" onclick="playerChoice('rock')">
+          <img src="assets/images/rock.png" alt="Rock" />
+          <span>Rock</span>
+        </button>
+        <button type="button" aria-label="Paper" onclick="playerChoice('paper')">
+          <img src="assets/images/paper.png" alt="Paper" />
+          <span>Paper</span>
+        </button>
+        <button
+          type="button"
+          aria-label="Scissors"
+          onclick="playerChoice('scissors')"
+        >
+          <img src="assets/images/scissors.png" alt="Scissors" />
+          <span>Scissors</span>
+        </button>
+        <button
+          type="button"
+          aria-label="Lizard"
+          onclick="playerChoice('lizard')"
+        >
+          <img src="assets/images/lizard.png" alt="Lizard" />
+          <span>Lizard</span>
+        </button>
+        <button type="button" aria-label="Spock" onclick="playerChoice('spock')">
+          <img src="assets/images/spock.png" alt="Spock" />
+          <span>Spock</span>
+        </button>
+      </div>
+
     <!-- JavaScript file for game logic -->
     <script src="assets/js/script.js"></script>
 </body>
