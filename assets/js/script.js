@@ -21,3 +21,15 @@ function playerChoice(playerSelection) {
     // Start the bouncing animation for the chosen images
     startBouncing();
 }
+
+// Function to display the choices of the player and computer
+function displayChoices(playerSelection, computerSelection) {
+    // Get the HTML elements for displaying choices
+    const playerChoiceImage = document.getElementById('playerChoiceImage');
+    const computerChoiceImage = document.getElementById('computerChoiceImage');
+
+    // Set the background images for both choices
+    playerChoiceImage.style.backgroundImage = `url('assets/images/${playerSelection}.png')`;
+    computerChoiceImage.style.backgroundImage = `url('assets/images/${computerSelection}.png')`;
+}
+
