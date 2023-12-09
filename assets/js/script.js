@@ -33,3 +33,11 @@ function displayChoices(playerSelection, computerSelection) {
     computerChoiceImage.style.backgroundImage = `url('assets/images/${computerSelection}.png')`;
 }
 
+// Function to update the scoreboard
+function updateScoreboard() {
+    // Update the score values in the HTML
+    document.getElementById('playerScore').innerText = playerScore;
+    document.getElementById('computerScore').innerText = computerScore;
+    document.getElementById('drawScore').innerText = drawScore;
+}
+
