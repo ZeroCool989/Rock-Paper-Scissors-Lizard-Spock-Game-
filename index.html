@@ -78,6 +78,26 @@
     <button type="button" id="muteButton" onclick="toggleMute()">
         Mute Sounds
     </button>
+
+    <!-- Popup for displaying game rules -->
+    <div id="rulesPopup" class="popup">
+        <div class="popup-content">
+            <!-- Close button for the rules popup -->
+            <span class="close" onclick="hideRules()">&times;</span>
+            <h2>Game Rules</h2>
+            <!-- Description of the game rules -->
+            <p>
+                Scissors cuts paper, paper covers rock, rock crushes lizard, lizard
+                poisons Spock, Spock smashes scissors, scissors decapitates lizard,
+                lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as
+                it always has ... rock crushes scissors.
+            </p>
+            <!-- Button to play/pause rules narration -->
+            <button id="playPauseAudio" onclick="toggleAudio()">
+                Play Rules Narration
+            </button>
+        </div>
+    </div>
     <!-- JavaScript file for game logic -->
     <script src="assets/js/script.js"></script>
 </body>
