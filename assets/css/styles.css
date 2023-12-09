@@ -220,3 +220,28 @@ audio {
     justify-content: center;
     gap: 10px;
 }
+
+/* Bounce Animation for Choice Images */
+@keyframes bounceRight {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes bounceLeft {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
