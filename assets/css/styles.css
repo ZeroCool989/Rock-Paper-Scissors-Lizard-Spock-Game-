@@ -12,6 +12,13 @@ body {
     color: white;
 }
 
+#choicePrompt {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
 /* Hero Section Styles */
 #hero {
     background-image: url('../images/hero_image.png');
