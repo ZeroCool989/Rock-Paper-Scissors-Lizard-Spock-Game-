@@ -132,3 +132,14 @@ function hideRules() {
     rulesPopup.style.display = 'none';
 }
 
+// Function to toggle the audio narration of the game rules
+function toggleAudio() {
+    const rulesNarration = document.getElementById('rulesNarration');
+    if (rulesNarration.paused) {
+        rulesNarration.play();
+        document.getElementById('playPauseAudio').textContent = 'Pause Rules Narration';
+    } else {
+        rulesNarration.pause();
+        document.getElementById('playPauseAudio').textContent = 'Play Rules Narration';
+    }
+}
