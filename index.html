@@ -59,14 +59,25 @@
     <!-- Display the game result -->
     <p id="result"></p>
 
-     <!-- Scoreboard showing player and computer scores -->
-     <div id="scoreboard">
+    <!-- Scoreboard showing player and computer scores -->
+    <div id="scoreboard">
         <div>Player Score: <span id="playerScore">0</span></div>
         <div>Computer Score: <span id="computerScore">0</span></div>
         <div>Draws: <span id="drawScore">0</span></div>
-      </div>
-  
+    </div>
 
+    <!-- Button to reset the game -->
+    <button type="button" id="resetButton" onclick="resetGame()">
+        Reset Game
+    </button>
+    <!-- Button to show game rules -->
+    <button type="button" id="rulesButton" onclick="showRules()">
+        Show Rules
+    </button>
+    <!-- Button to mute/unmute sounds -->
+    <button type="button" id="muteButton" onclick="toggleMute()">
+        Mute Sounds
+    </button>
     <!-- JavaScript file for game logic -->
     <script src="assets/js/script.js"></script>
 </body>

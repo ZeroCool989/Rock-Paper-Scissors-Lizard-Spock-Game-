@@ -128,3 +128,26 @@ body {
     border-right: 2px solid white;
     padding-right: 10px;
 }
+
+/* Reset, Rules, and Mute Button Styles */
+#resetButton,
+#rulesButton,
+#muteButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover,
+#rulesButton:hover,
+#muteButton:hover {
+    background-color: #555;
+}
