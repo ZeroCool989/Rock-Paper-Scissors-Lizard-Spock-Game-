@@ -274,4 +274,29 @@ audio {
     }
 }
 
+@media screen and (max-width: 480px) {
+    #choices button {
+        width: 100px;
+        height: 100px;
+    }
 
+    #choices button img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .popup-content {
+        width: 90%;
+    }
+
+    .popup-content p,
+    #playPauseAudio {
+        font-size: 0.9em;
+    }
+
+    .close {
+        font-size: 20px;
+        top: 15px;
+        right: 20px;
+    }
+}
