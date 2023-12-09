@@ -41,3 +41,10 @@ function updateScoreboard() {
     document.getElementById('drawScore').innerText = drawScore;
 }
 
+// Function to get a random choice for the computer
+function computerChoice() {
+    const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+    return choices[Math.floor(Math.random() * choices.length)];
+}
+
+
