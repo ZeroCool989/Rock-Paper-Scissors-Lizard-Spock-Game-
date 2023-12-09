@@ -85,4 +85,16 @@ function playSound(result) {
     sound.play();
 }
 
-
+// Function to reset the game
+function resetGame() {
+    // Reset all scores to zero
+    playerScore = 0;
+    computerScore = 0;
+    drawScore = 0;
+    updateScoreboard();
+    // Clear the result message and choice images
+    document.getElementById('result').innerText = '';
+    document.getElementById('playerChoiceImage').style.backgroundImage = '';
+    document.getElementById('computerChoiceImage').style.backgroundImage = '';
+    resetAudio();
+}
