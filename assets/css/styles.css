@@ -11,3 +11,14 @@ body {
     background-color: #36454F;
     color: white;
 }
+
+/* Hero Section Styles */
+#hero {
+    background-image: url('../images/hero_image.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 50px;
+    height: 50vh;
+}
