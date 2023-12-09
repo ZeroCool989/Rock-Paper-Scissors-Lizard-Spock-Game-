@@ -70,3 +70,19 @@ function determineWinner(playerSelection, computerSelection) {
     }
 }
 
+// Function to play sound based on the game result
+function playSound(result) {
+    if (isMuted) return; // Do not play sound if muted
+
+    let sound;
+    if (result.includes('win')) {
+        sound = document.getElementById('winSound');
+    } else if (result.includes('lose')) {
+        sound = document.getElementById('loseSound');
+    } else {
+        sound = document.getElementById('tieSound');
+    }
+    sound.play();
+}
+
+
