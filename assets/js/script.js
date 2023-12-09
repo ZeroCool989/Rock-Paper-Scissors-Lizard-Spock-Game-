@@ -157,3 +157,13 @@ function toggleMute() {
     });
 }
 
+// Function to reset the audio narration to the beginning
+function resetAudio() {
+    const rulesNarration = document.getElementById('rulesNarration');
+    if (!rulesNarration.paused) {
+        rulesNarration.pause();
+        rulesNarration.currentTime = 0; // Reset audio to start
+        document.getElementById('playPauseAudio').textContent = 'Play Rules Narration';
+    }
+}
+
