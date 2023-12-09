@@ -47,4 +47,26 @@ function computerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
+// Function to determine the winner of the round
+function determineWinner(playerSelection, computerSelection) {
+    // Define the winning conditions for each choice
+    const winningConditions = {
+        rock: ['scissors', 'lizard'],
+        paper: ['rock', 'spock'],
+        scissors: ['paper', 'lizard'],
+        lizard: ['spock', 'paper'],
+        spock: ['scissors', 'rock']
+    };
+    // Determine the winner based on the choices
+    if (playerSelection === computerSelection) {
+        drawScore++;
+        return "It's a draw!";
+    } else if (winningConditions[playerSelection].includes(computerSelection)) {
+        playerScore++;
+        return `You win! ${playerSelection} beats ${computerSelection}`;
+    } else {
+        computerScore++;
+        return `You lose! ${computerSelection} beats ${playerSelection}`;
+    }
+}
 
