@@ -114,3 +114,8 @@ function startBouncing() {
         stopBouncing(computerChoiceImage);
     }, 1000);
 }
+
+// Function to stop the bouncing animation for a given image element
+function stopBouncing(imageElement) {
+    imageElement.style.animation = 'none';
+}
